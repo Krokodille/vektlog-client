@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import axios from "axios";
 import Grid from "@material-ui/core/Grid";
 
+import Weight from "../components/Weight.js";
+
 class home extends Component {
 	state = {
 		weights: null,
@@ -20,7 +22,7 @@ class home extends Component {
 	}
 	render() {
 		let recentWeightMarkup = this.state.weights ? (
-			this.state.weights.map((weight) => <p>{weight.weight}</p>)
+			this.state.weights.map((weight) => <Weight weight={weight} />)
 		) : (
 			<p>Loading...</p>
 		);

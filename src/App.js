@@ -6,7 +6,7 @@ import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
 import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
 
 //Components
-import Chart from "./components/Chart.js";
+//import Chart from "./components/Chart";
 
 //Pages
 import home from "./pages/home";
@@ -34,7 +34,7 @@ class App extends Component {
 				<div className="App">
 					<Router>
 						<div className="container">
-							<Switch></Switch>
+							<p>Dette er en test</p>
 						</div>
 					</Router>
 				</div>
